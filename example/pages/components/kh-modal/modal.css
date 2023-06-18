@@ -1,0 +1,90 @@
+.kh-modal-body {
+	position: fixed;
+	top: 0rpx;
+	left: 0rpx;
+	width: 100vw;
+	height: 100vh;
+	z-index: 8888;
+}
+.kh-modal-conbody {
+	box-sizing: border-box;
+	position: absolute;
+	bottom: 0rpx;
+	left: 50%;
+	z-index: 9999;
+	transform: translate(-50%);
+	padding: 60rpx;
+	width: 50%;
+	height: 200rpx;
+	border-radius: 40rpx;
+	background-color: #ffffff;
+}
+.kh-modal-conbody::before {
+	content: "";
+	display: inline-block;
+	position: absolute;
+	top: -140rpx;
+	right: -80rpx;
+	z-index: -1;
+	width: 360rpx;
+	height: 400rpx;
+	background-image: var(--conpic-image);
+	background-size: contain;
+}
+.kh-modal-title {
+	display: block;
+	height: 100rpx;
+	line-height: 100rpx;
+	font-size: 50rpx;
+	font-weight: 700;
+}
+.kh-modal-subtitle {
+	display: block;
+	font-weight: 700;
+	font-size: 30rpx;
+}
+.kh-modal-content {
+	box-sizing: border-box;
+	position: absolute;
+	display: block;
+	padding: 10rpx 0rpx;
+	width: 75%;
+	line-height: 46rpx;
+	font-size: 28rpx;
+	font-weight: 600;
+}
+.kh-modal-content li {
+	box-sizing: border-box;
+	list-style: none;
+	padding-left: 30rpx;
+}
+.kh-modal-content li::before {
+	content: "";
+	display: inline-block;
+	position: absolute;
+	left: 0rpx;
+	margin-top: 12rpx;
+	width: 8rpx;
+	height: 20rpx;
+	border-radius: 4rpx;
+	background-color: #000;
+}
+.kh-modal-buttons {
+	position: absolute;
+	bottom: 60rpx;
+	display: flex;
+	justify-content: center;
+	width: 80%;
+	height: 90rpx;
+}
+.kh-modal-button {
+	box-sizing: border-box;
+	flex: 1;
+	border-radius: 45rpx;
+	font-size: 30rpx;
+	font-weight: 600;
+	border: none;
+}
+.kh-modal-button + .kh-modal-button {
+  margin-left: 20px;
+}

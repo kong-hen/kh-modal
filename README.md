@@ -1,9 +1,11 @@
 # kh-modal
 一款使用api方法调用的，支持高度自定义的uniapp弹窗组件
 
+弹窗由js创建
 
-#使用方法
-##首先在App.vue中引入CSS样式文件
+
+# 使用方法
+## 首先在App.vue中引入CSS样式文件
 ```
 <style>
 	/* 导入弹窗组件css */
@@ -11,7 +13,7 @@
 </style>
 ```
 
-##在需要使用的页面导入插件，并给根标签添加```ref=khUtilsContain```的属性
+## 在需要使用的页面导入插件，并给根标签添加```ref=khUtilsContain```的属性
 ```
 <template>
 	<view ref="khUtilsContain">
@@ -26,7 +28,7 @@
 </script>
 ```
 
-##使用api方法使用弹窗
+## 使用api方法使用弹窗
 ```
 khModal.showKhModal({
 	container: this.$refs.khUtilsContain, // 需要使用本弹窗插件的页面根<view>标签请添加ref=khUtilsContain
@@ -77,7 +79,7 @@ khModal.showKhModal({
 })
 ```
 
-##完整示例
+## 完整示例
 ```
 <template>
 	<view ref="khUtilsContain">
